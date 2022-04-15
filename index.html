@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>연습과일</title>
+
+	<style>
+
+		* {margin: 0 auto; padding: 0;}
+		ul,ol,li {list-style: none;}
+
+		header {width: 2000px; height:346px; margin:0 auto; }
+
+		#pop {width: 2000px; height:40px;background-color:rosybrown; margin:0 auto; text-align: center;}
+
+		#pop> a >img {width: 100%;}
+
+		#search {width: 400px; height:50px; font-size:15px;margin:0 0 0 200px; }
+
+		#search> p >a {float: left;margin:10px 0 0 70px; text-decoration: none; color: #666; border: 1px solid #c2ccd6; border-radius: 15px; padding: 5px; margin: 10px 0 0 20px; }
+
+
+		#search> p > a >span {font-weight: bold; color:cd8c6d; }
+
+
+
+
+
+
+		#logo {width: 500px; height:100px; margin:40px 725px; float: left; }
+		#logo> a >img {width:100%;height: 100px;}
+
+		#login {width: 500px; height:50px; float: right;
+			margin: -190px 200px 0 0px;}
+
+			#login > ul {font-size:14px;}
+			#login > ul>li {float: left; margin: 15px 0 0 20px;}
+			#login>ul>li>a {text-decoration: none; color: #666;}
+			#login > ul li:nth-of-type(6) {font-weight: bold;}
+
+
+			nav {width: 1300px; height:50px;  float: left; margin: 0 0 0 300px;}
+
+			nav> ul { font-size:18px;}
+			nav> ul > li{float: left; margin: 15px 0 0 50px; }
+			nav> ul > li >a{text-decoration: none; color: #666; margin: 0px 0 0 10px;}
+			nav > ul > li >a:hover{opacity: 0.7;}
+
+
+
+			#slider {width: 2000px;height: 500px;background-color:hotpink;margin: 0 auto;}
+
+
+			#fruit {width: 1300px; height: 700px;margin: 0 auto;}
+
+			#fruit> h1 { font-size: 28px; text-align: center; padding: 40px 0 0 0px; }
+
+			#fruit> p {text-align: center; color: #666; margin: 0 auto;}
+
+			.boxname {width: 300px; height: 400px; background-color:red ;margin: 140px 0px 0 5px; display:inline-block;}			
+
+
+			.boxname> a >img {width: 100%; height:100%;}
+
+			.boxname> h3 >a {text-decoration:none; font-size:16px; color: black;}
+
+			.boxname> p >a {text-decoration:none; font-size:14px; color: black;}
+
+			del {font-size:14px; color:#ccc;}
+
+			.boxname> h4 >a {text-decoration:none; font-size:18px; color: black;}
+
+			#fruit > div:first-of-type {margin:30px 0 0 15px;}
+			#fruit > div:nth-of-type(2) {margin:30px 0 0 15px;}
+			#fruit > div:nth-of-type(3) {margin:30px 0 0 15px;}
+			#fruit > div:last-of-type {margin:30px 0 0 15px;}
+
+
+
+
+
+
+			#good {width: 1300px; height: 750px;margin: 0 auto; }
+
+			#good> h1 { font-size: 28px; text-align: center; padding: 40px 0 0 0px; }
+
+			#good> p {text-align: center; color: #666; margin: 0 auto;}
+
+			.season {width: 300px; height: 400px; background-color:red ;margin: 10px 0px 0 5px; display:inline-block;}			
+
+
+			.season> a >img {width: 100%; height:100%;}
+
+			.season> h3 >a {text-decoration:none; font-size:16px; color: black;}
+
+			.season> p >a {text-decoration:none; font-size:14px; color: black;}
+
+			del {font-size:14px; color:#ccc;}
+
+			.boxname> h4 >a {text-decoration:none; font-size:18px; color: black;}
+
+			#good > div:first-of-type {margin:30px 0 0 15px;}
+			#good > div:nth-of-type(2) {margin:30px 0 0 15px;}
+			#good > div:nth-of-type(3) {margin:30px 0 0 15px;}
+			#good > div:last-of-type {margin:30px 0 0 15px;}
+
+
+			.coupon {width: 1800px; height: 250px; background-color:darkred ;margin: 0 auto;}
+
+			.coupon>a>img{width: 100%; height: 100%;}
+
+
+			#funding {width: 1300px; height: 500px; background-color:yellow ;margin: 50px  auto;}
+
+			#funding>.text { width: 550px; height: 500px;background-color:#ebebe0 ; float: left; }
+
+			#funding>.text>h1 { margin:120px 0 0 60px; color: #3d3d29;}
+
+			#funding>.text>h1>span { font-weight: 100;}
+
+			#funding>.text> p { padding: 20px 0px;margin:0px 0 0px 60px;}
+
+			#funding>.text> p > a { text-decoration:none; color: #666;  font-size:16px; }
+
+			#funding>.text> h2{ padding: 20px 0;margin: 0px 0 0 60px;}
+
+			#funding>.text> h2 > a { text-decoration:none; color: black; font-size:18px; font-weight: 100; }
+
+			#funding>.text> h3 { margin:0px 0 0 60px;} 
+			#funding>.text> h3> span { font-weight: 100;}
+
+			.imgbox{ width: 750px; height: 500px;background-color:blueviolet ; float: left;}
+
+			.imgbox>a>img{ width: 100%; height: 100%;}
+
+
+
+
+			#recommend{ width: 1300px; height: 725px; margin: 0 auto;}
+
+
+			#recommend> h1 { font-size: 28px; text-align: center; padding: 40px 0 0 0px; }
+
+			#recommend> p { text-align: center; color: #666; margin: 0 auto;}
+
+			#recommend>#choose{ width: 1200px; height: 100px; margin: 20px auto; }
+
+			#recommend>#choose>.blur{ font-size: 20px;  }
+
+
+
+
+
+			#recommend >#choose>.blur>li { width: 200px; height: 35px;float:left; margin:30px 0 0 25px; border:1px solid #666;  text-align:center; padding:5px 0 0 0px;   text-align:center; padding:5px ;   border-radius: 20px;}
+
+			#recommend >#choose>.blur>li:hover{text-decoration:none; color:#777; background-color:#ddd;}
+
+
+			#recommend> #choose >.blur>  li > a { text-decoration:none;  color:#666;display: block;}
+
+
+			#recommend >#imgblur {width: 1300px;height: 450px; }
+
+			#imgblur>.z{width: 300px; height: 350px; ; display:inline-block; margin: 0px 0px 0 17px;}
+
+			#imgblur>.z>a>img{width:100%; height: 100%;}
+
+			.z> h3 >a {text-decoration:none; font-size:16px; color: black;}
+
+			.z> p >a {text-decoration:none; font-size:14px; color: #666;}
+
+
+
+			#news{width: 1200px; height: 450px; margin: 0 auto;}
+
+			.sml{width: 380px; height: 400px; margin: 20px 0 0 10px; display: inline-block;}
+
+
+
+
+
+			#movie {width: 2200px; height: 1400px; background-color:yellow ;margin: 0px auto;}
+
+			#story{width: 100%;height: 400px; background-color:gold; background-image: url('img/forest.png'); margin: 0px auto;}
+
+			#story  >.bale> h1{color:white; padding: 50px 700px; text-align: center;}
+
+			.pro{width: 1000px;height: 400px;background-color:red; margin: 0px auto ;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				#under{width: 1000px; height:1200px;background-color:blueviolet; margin:10px auto;}
+
+				.review{width: 195px; height:250px;background-color:blue; display: inline-block; margin: -80px auto;}
+
+				.all{width: 200px; height:250px;background-color:blue; display: inline-block; margin: 100px 0 0 35px;}
+
+
+
+				footer{width: 2000px;height: 400px;background-color:red;margin: 0 auto;}
+
+				#box{width: 2000px;height: 100px;background-color:yellow;margin: 0 auto;}
+				#underbox{width: 2000px;height: 50px;background-color:green;margin: 0 auto;}
+				#under2box{width: 2000px;height: 250px;background-color:skyblue;margin: 0 auto;}
+
+
+
+			</style>
+
+
+
+		</head>
+		<body>
+			<header>
+
+				<div id="pop">
+
+					<a href="#"><img src="img/banner.png" alt="배너"></a>
+
+					<div id="search">
+
+
+						<p><a href="#">나와 맞는 AI <span>과일궁합</span>    >
+						</a></p>
+
+						<p><a href="#">새벽배송 지역검색    ></a></p>
+
+					</div>
+
+
+
+				</div>
+
+				<div id="logo">
+					<a href="#"><img src="img/logo.gif" alt="로고"></a>
+
+				</div>
+
+				<div id="login">
+
+
+
+					<ul>
+
+						<li><a href="#">로그인</a></li>
+
+
+						<li><a href="#">회원가입</a></li>
+
+
+
+						<li><a href="#">마이페이지</a></li>
+
+
+						<li>ㅣ</li>
+
+
+						<li><a href="#">고객센터</a></li>
+
+
+
+
+						<li><a href="#">VIP회원</a></li>
+
+
+
+					</ul>
+
+
+
+				</div>
+
+
+				<nav>
+
+					<ul>
+						<li><a href="#">갓딴배송</a></li>
+
+						<li><a href="#">제철과일</a></li>
+
+						<li><a href="#">선물과일</a></li>
+
+						<li><a href="#">과일구독</a></li>
+
+						<li><a href="#">펀딩과일</a></li>
+
+						<li><a href="#">나의과일나무</a></li>
+
+						<li><a href="#">펫과일</a></li>
+
+						<li><a href="#">기업과일</a></li>
+
+						<li><a href="#">브랜드스토리</a></li>
+
+
+					</ul>
+
+				</nav>
+			</header>
+
+			<div id="slider">
+
+				<a href="#"><img src="img/slider.jpg" alt="화면"></a>
+
+			</div>
+
+			<div id="fruit"> 
+
+				<h1>제철과일 꾸러미</h1>
+				<p>___________</p>
+
+				<div class="boxname">
+					<a href="#"><img src="img/1.jpg"alt=""></a>
+					<h3><a href="#">[4월 제철과일 꾸러미 참외1.5kg 딸기 1kg]</a></h3>
+					<p><a href="#">함께 구매하면 좋은 4월 제철과일꾸러미<br><del>5,6000원</del></a></p>
+					<h4>50,000원</h4>
+
+
+				</div>
+
+				<div class="boxname">
+
+					<a href="#"><img src="img/2.jpg"alt=""></a>
+					<h3><a href="#">[4월 제철과일 꾸러미] 한라봉 1kg + 참외 1kg + 짭짤이토마토 500g</a></h3>
+					<p><a href="#">함께 구매하면 좋은 4월 제철과일꾸러미<br><br></a></p>
+					<h4>50,000원</h4>
+				</div>
+
+				<div class="boxname">
+
+					<a href="#"><img src="img/3.jpg"alt=""></a>
+					<h3><a href="#">[캠핑 제철과일 꾸러미] 밤 1kg + 고구마 1.5kg + 한라봉 1kg</a></h3>
+					<p><a href="#">캠핑장에서 즐길 수 있는 제철과일 꾸러미<br><del>5,6000원</a></p>
+						<h4>50,000원</h4>
+					</div>
+
+					<div class="boxname">
+
+						<a href="#"><img src="img/4.jpg"alt=""></a>
+						<h3><a href="#">[4월 제철과일 꾸러미] 한라봉 1.5kg + 딸기 1kg</a></h3>
+						<p><a href="#">캠핑장에서 즐길 수 있는 제철과일 꾸러미<br><br></a></p>
+						<h4>50,000원</h4>
+
+					</div>
+
+				</div>
+
+
+
+				<div id="good">
+
+					<h1>명인의 제철과일</h1>
+					<p>___________</p>
+
+
+
+					<div class="season">
+
+						<a href="#"><img src="img/5.jpg"alt=""></a>
+						<h3><a href="#">[부산] 못난이 대저 짭짤이 토마토 500g</a></h3>
+						<p><a href="#">3대째 이어온 대저 짭짤이 토마토 최고 경매 낙찰가 명인<br><del>5,6000원</a></a></p>
+							<h4>50,000원</h4>
+						</div>
+
+						<div class="season">
+
+							<a href="#"><img src="img/6.jpg"alt=""></a>
+							<h3><a href="#">[함안] 스피드 꿀 수박 5kg</a></h3>
+							<p><a href="#">30년 경력 농협 새농민상에 선정된 명인의 최상급 특품<br><br></a></p>
+							<h4>50,000원</h4>
+						</div>
+
+						<div class="season">
+
+							<a href="#"><img src="img/7.jpg"alt=""></a>
+							<h3><a href="#">[서귀포] 못난이 써니트 한라봉 1kg</a></h3>
+							<p><a href="#">제주국제감귤박람회 만감류 품평회 수상한 명인 특품<br><del>5,6000원</a></a></p>
+								<h4>50,000원</h4>
+
+							</div>
+
+							<div class="season">
+								<a href="#"><img src="img/8.jpg"alt=""></a>
+								<h3><a href="#">[고창] 유기농 한라봉 4kg 박스</a></h3>
+								<p><a href="#">유네스코 지정 청정지역 고창에서 유기농을 키운 한라봉<br><br></a></p>
+								<h4>50,000원</h4>
+
+
+							</div>
+
+						</div>
+
+
+
+
+
+						<main>
+
+							<div class="coupon">
+
+								<a href="" alt=""><img src="img/coupon.jpg" alt="쿠폰"></a>
+
+
+
+							</div>
+
+							<div id="funding">
+
+								<div class="text">
+
+									<h1>펀딩과일<span>(사전예약)</span></h1>
+
+									<p><a href="#" alt="">ICT 기술을 활용한 스마트팜 애플망고 연구가</a></p>
+
+									<h2><a href="#" alt="">[펀딩과일] 함안 애플 망고 400g</a></h2>
+									<h3>37,800<span>원</span></h3>
+
+
+								</div>
+
+
+								<div class="imgbox">
+
+									<a href="" alt=""><img src="img/mango.jpg" alt="망고"></a>
+
+
+
+								</div>
+
+							</div>
+
+
+
+
+							<div id="recommend">
+
+								<h1>진맛과 추천</h1>
+								<p>___________</p>
+
+								<div id="choose">
+
+									<ul class="blur">
+
+										<li><a href=""#>#선물과일</a></li>
+										<li><a href=""#>#과일구독</a></li>
+										<li><a href=""#>#별난과일</a></li>
+										<li><a href=""#>#간편과일</a></li>
+										<li><a href=""#>#펫과일</a></li>
+
+									</ul>
+
+								</div>
+
+								<div id="imgblur">
+
+									<div class="z">
+										<a href=""><img src="img/sweet1.jpg" alt=""></a>
+										<h3><a href="#">[거창] 딸기 크리스피롤 1봉</a></h3>
+										<p><a href="#">3대한민국 최고 농업기술에 선정된 명인</a></p>
+										<h4>4,000 원 </h4>
+
+
+
+
+									</div>
+
+									<div class="z">
+										<a href=""><img src="img/sweet2.jpg" alt=""></a>
+										<h3><a href="#">진맛과 수제 자두청 600ml</a></h3>
+										<p><a href="#">대한민국 1% 명인과일로 만든 수제청</a></p>
+										<h4>36,000 원 </h4>	
+
+
+
+
+
+
+
+
+
+									</div>
+
+									<div class="z">
+										<a href=""><img src="img/sweet3.jpg" alt=""></a>
+										<h3><a href="#">[고창] 2021 햇 냉동 토종 오디 2kg</a></h3>
+										<p><a href="#">대한민국 최고 품질 전북 고창 토종 오디</a></p>
+										<h4>일시품절</h4>
+
+
+
+
+									</div>
+
+									<div class="z">
+
+
+
+
+										<a href=""><img src="img/sweet4.jpg" alt=""></a>
+										<h3><a href="#">[영주] 별사과 즙 30팩</a></h3>
+										<p><a href="#">국립종자원 신품종에 선정된 명인</a></p>
+										<h4>29,800 원  </h4>
+									</div>
+
+
+								</div>
+
+
+							</div>
+
+
+						</div>
+
+					</main>	
+
+
+
+
+
+					<section id="news">
+
+						<div class="sml">
+							
+							<a href="#"><img src="img/dad.jpg"alt=""></a>
+						</div>
+
+						<div class="sml">
+							<a href="#"><img src="img/star.jpg"alt=""></a>
+
+						</div>
+
+						<div class="sml">
+							
+							<a href="#"><img src="img/heart.jpg"alt=""></a>
+						</div>
+
+					</section>
+
+
+
+
+					<div id="movie">
+
+						<div id="story">
+
+			
+								<div class="bale">
+							<h1>진맛과 과일명인 스토리</h1>
+
+						</div>
+
+
+						</div>
+					</div>
+
+
+
+
+					<section id="under">
+
+						<div class="review"></div>
+
+						<div class="review"></div>
+
+						<div class="review"></div>
+
+						<div class="review"></div>
+
+						<div class="review"></div>
+
+
+						<h5>전체과일</h5>
+
+						<div class="all"></div>
+
+						<div class="all"></div>
+
+						<div class="all"></div>
+
+						<div class="all"></div>
+
+						<div class="all"></div>
+
+						<div class="all"></div>
+
+						<div class="all"></div>
+
+						<div class="all"></div>
+
+
+					</section>
+
+					<footer>
+
+
+						<div id="box"></div>
+						<div id="underbox"></div>
+						<div id="under2box"></div>
+
+					</footer>
+
+
+
+				</body>
+				</html>
